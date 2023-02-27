@@ -1,3 +1,16 @@
+const server = require('./src/app.js');
+const { conn } = require('./src/db.js');
+const { port } = require('./src/utils/config')
+// const { typesApi } = require('./src/controllers/typeController/typeController')
+// Syncing all the models at once.
+conn.sync({ force: true }).then(() => {
+  server.listen(3001, () => {
+    console.log(`listening at port ${ port }`);
+  });
+});
+
+
+
 //                       _oo0oo_
 //                      o8888888o
 //                      88" . "88
@@ -17,11 +30,3 @@
 //     =====`-.____`.___ \_____/___.-`___.-'=====
 //                       `=---='
 //     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-const server = require('./src/app.js');
-const { conn } = require('./src/db.js');
-// Syncing all the models at once.
-conn.sync({ force: true }).then(() => {
-  server.listen(3001, () => {
-    console.log('%s listening at 3001'); // eslint-disable-line no-console
-  });
-});

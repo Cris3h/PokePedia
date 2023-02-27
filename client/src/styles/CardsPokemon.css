@@ -1,0 +1,64 @@
+
+.card-container {
+  border: solid 2px rgb(136, 32, 39);
+  border-radius: 4px;
+  height: 100%;
+  background: rgb(210, 51, 60);
+  background: linear-gradient(
+    61deg,
+    rgba(210, 51, 60, 1) 0%,
+    rgba(84, 28, 29, 1) 25%,
+    rgba(252, 59, 70, 1) 100%
+    );
+  }
+  
+  .img-container {
+    margin-bottom: 2rem;
+  }
+  
+  .image {
+    width: 65%;
+    margin: 17px 0px;
+  }
+
+.description {
+  text-align: center;
+}
+
+.description h3 {
+  color: whitesmoke;
+}
+
+.description p {
+  color: whitesmoke;
+}
+
+.description h2:hover {
+  transform: scale(1.05);
+}
+
+.description p:hover {
+  transform: scale(1.05);
+}
+
+@media screen and (min-width: 1024px) {
+  .image{
+    width: 320px;
+    height: 400px;
+    margin: 17px 35px;
+  }
+
+}
+
+
+/* ------------------------------------------------------------------------------------------ */
+
+/* .card:hover {
+  background-color: rgba(255, 255, 255, 0.979);
+	background-position: left;
+	color: rgb(153, 241, 12);
+	box-shadow: inset 3px 3px 5px #ffffff, 0px 0px 10px rgb(255, 255, 255);
+  opacity: 1;
+} */
+/* GRACIAS FREEFONTEND! TE AMO */
+

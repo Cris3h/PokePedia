@@ -1,16 +1,16 @@
+//apiControllers acá
 const  axios  = require('axios');
-const { apiURL } = require('../utils')
-
-
 
  const mapDetails = (resp) => {
         return resp.map(poke => axios.get(`${poke.url}`))
     }
 
-const apiCall = async () => {
+const fillDataBase = async () => {
     const apiCall = await axios.get('https://pokeapi.co/api/v2/pokemon/?limit=5')
+    // console.log('esto es apiCall ---> ',apiCall)
 
     const response = apiCall.data.results
+
     const getDetailsPokemons = await Promise.all(mapDetails(response))
 
     const detailsMaped = getDetailsPokemons.map(apiPoke=> {
@@ -31,15 +31,6 @@ const apiCall = async () => {
     return detailsMaped;
 };
 
-const fillDb = () => {
-    const allPokes = apiCall();
-
-    
+module.exports = {
+    fillDataBase
 }
-
-
-
-
-
-
-module.exports = { apiCall }

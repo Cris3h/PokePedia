@@ -1,0 +1,47 @@
+.button{
+  padding: 6px 12px;
+  background-color: rgba(255,59,71,1);
+  color: black;
+  border: none;
+  border-radius: 2.5px;
+  font-size: 13px;
+  cursor: pointer;
+  margin: 4px 2px;
+
+  } 
+
+   .paginado {
+    display: inline;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    align-content: flex-end;
+    font-family:Arial;
+    font-weight:bold;
+    font-size:15px;
+  }
+  
+  .li {
+    display:inline;
+       /* padding-left:1.5px;
+       padding-right:1.5px; */
+  }
+
+/*  .asdasd{    --size: 32px;
+    --margin: 6px;
+    margin: 5 var(--margin);
+    border-radius: 6px;
+    background: #202020;
+    min-width: var(--size); 
+    height: var(--size);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; 
+    cursor: pointer; 
+    padding: 0 6px;
+    color: rgb(121, 121, 121);  
+    flex-wrap: wrap;
+    text-align: center;
+    padding-right: 1rem;
+    padding-left: 1rem;} */

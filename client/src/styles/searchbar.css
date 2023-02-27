@@ -1,0 +1,37 @@
+.main-container-searchbar{
+    align-items: center;
+    justify-items: center;
+  }
+  
+  .input-searchbar{
+    background-color:  rgb(136,32,39);
+    color: whitesmoke;
+    padding: 0 1rem;
+    margin-right: 3.5px;
+    appearance: none;
+    padding: 5px 10px;
+    border: solid 2px whitesmoke; 
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .btn-searchbar {
+    border: 0;
+    outline: 1px;
+    cursor: pointer;
+    color: whitesmoke;
+    background-color:rgb(136,32,39);
+    box-shadow: rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px,
+      rgb(0 0 0 / 12%) 0px 1px 1px 0px, whitesmoke 0px 0px 0px 1px,
+      rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px,
+      rgb(60 66 87 / 8%) 0px 2px 5px 0px;
+    border-radius: 4px;
+    padding: 5px 10px;
+    min-height: 28px;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  .btn-searchbar:hover {
+    transform: scale(1.01);
+
+  }
